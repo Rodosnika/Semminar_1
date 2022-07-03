@@ -67,13 +67,15 @@ else if (dey == 7)
 */
 
 // Задача 5 Введите целые числа от -N до N
-Console.WriteLine("введите число");
-int n = 3;
-int start=-n;
-int finich =n;
+Console.WriteLine("Введите число:");
+int n = Convert.ToInt32(Console.ReadLine());
+int start = -Math.Abs(n);
+int finich = Math.Abs(n);
+
+Console.WriteLine("Начало вывода:");
 while (start <= finich)
 {
     Console.WriteLine(start);
     start++;
-  
+
 }
