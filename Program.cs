@@ -68,10 +68,12 @@ else if (dey == 7)
 
 // Задача 5 Введите целые числа от -N до N
 Console.WriteLine("введите число");
-int number = Convert.ToInt32(Console.ReadLine());
-int numberMinus = -number;
-while (numberMinus <= number)
+int n = 3;
+int start=-n;
+int finich =n;
+while (start <= finich)
 {
-    Console.WriteLine(numberMinus);
-    numberMinus = numberMinus + 1;
+    Console.WriteLine(start);
+    start++;
+  
 }
