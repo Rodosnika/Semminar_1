@@ -29,7 +29,7 @@ else
     Console.WriteLine("Нет, первое число не является квадратом второго");
 }
 */
-
+/*
 // Задача 3
 // Напишите программу, которая на по номеру будет выдавать день недели
 // 1+1=1 `1`+`1`=`11`, a+b=ab
@@ -63,4 +63,15 @@ else if (dey == 6)
 else if (dey == 7)
 {
     Console.WriteLine("Воскресенье");
+}
+*/
+
+// Задача 5 Введите целые числа от -N до N
+Console.WriteLine("введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+int numberMinus = -number;
+while (numberMinus <= number)
+{
+    Console.WriteLine(numberMinus);
+    numberMinus = numberMinus + 1;
 }
