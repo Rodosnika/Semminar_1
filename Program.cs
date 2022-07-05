@@ -197,16 +197,36 @@ while (true)
     i++;
 }
 */
-
+/*
 Console.Write("Write number 1: ");
-        int n = int.Parse(Console.ReadLine());
-        Console.Write("Write number 2: ");
-        int m = int.Parse(Console.ReadLine());
-        for (int i = n; i <= m; i++)
-        {
-            if (i % 2 == 0) 
-            {
-                Console.Write(i + " ");
-            }
-        }
-        Console.ReadKey();
+int n = int.Parse(Console.ReadLine());
+Console.Write("Write number 2: ");
+int m = int.Parse(Console.ReadLine());
+for (int i = n; i >= m; i++)
+{
+    if (i % 2 == 0)
+    {
+        Console.Write(i + " ");
+    }
+}
+Console.ReadKey();
+*/
+
+// Задача по поиску максимального и минимального значения и разности между ними
+int min = int.MaxValue;
+int max = int.MinValue;
+
+Console.WriteLine("Введите N: ");
+int n = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < n; i++)
+{
+    Console.Write("Введите число {0}: ", i + 1);
+    int val = int.Parse(Console.ReadLine());
+    if (val > max) max = val;
+    if (val < min) min = val;
+}
+
+Console.WriteLine("\nMin = {0}\nMax = {1}\n{1} - {0} = {2}", min, max, max - min);
+
+Console.ReadLine();
