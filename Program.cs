@@ -86,7 +86,13 @@ while (start <= finich)
 
 Console.WriteLine("Введите число:");
 int n = Convert.ToInt32(Console.ReadLine());
-int b;
-b = n % 10;
-Console.WriteLine("Последнее число");
-Console.WriteLine(b);
+if (n > 99 && n < 1000)
+{
+    Console.WriteLine("Последнее число");
+    Console.WriteLine(n % 10);
+}
+else 
+{
+    Console.WriteLine("Введено не трёхзначное число");
+}
+
