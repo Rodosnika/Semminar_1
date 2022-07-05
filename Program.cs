@@ -140,7 +140,7 @@ if (c > max) max = c;
 Console.Write("max= ");
 Console.WriteLine(max);
 */
-
+/*
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 // 4 -> да
 // -3 -> нет
@@ -157,15 +157,40 @@ if (i % 2 == 0)
 {
 
     Console.Write("Введенное число является четным");
-
     Console.Read();
 
 }
 
 else
-
 {
 
     Console.Write("Введенное число нечетное");
     Console.Read();
+}
+*/
+
+//Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+//5 -> 2, 4
+//8 -> 2, 4, 6, 8
+Console.Write("Введите Ваше имя ");
+string username = Console.ReadLine();
+Console.Write("Привет, ");
+Console.WriteLine(username);
+Console.WriteLine("Введите число ");
+string number = Console.ReadLine();
+
+int N = int.Parse(Console.ReadLine());
+int i = 1, k = 1;
+while (true)
+{
+    if (i % 2 == 0)
+    {
+        Console.Write(i + " ");
+        k++;
+    }
+    if (k > N)
+    {
+        break;
+    }
+    i++;
 }
