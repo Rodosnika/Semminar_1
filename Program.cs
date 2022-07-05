@@ -211,7 +211,7 @@ for (int i = n; i >= m; i++)
 }
 Console.ReadKey();
 */
-
+/*
 // Задача по поиску максимального и минимального значения и разности между ними
 int min = int.MaxValue;
 int max = int.MinValue;
@@ -230,3 +230,30 @@ for (int i = 0; i < n; i++)
 Console.WriteLine("\nMin = {0}\nMax = {1}\n{1} - {0} = {2}", min, max, max - min);
 
 Console.ReadLine();
+*/
+// Задача 3. На ввод подаётся рост трёх спортсменов. Расположить их от большего к меньшему.
+
+Console.WriteLine("Введите рост первого спортсмена:");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите рост второго спортсмена:");
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите рост третьего спортсмена:");
+int c = Convert.ToInt32(Console.ReadLine());
+if (a < b && a < c)
+{
+    Console.WriteLine(a);
+    Console.WriteLine(Math.Min(b, c));
+    Console.WriteLine(Math.Max(b, c));
+}
+if (b < a && b < c)
+{
+    Console.WriteLine(b);
+    Console.WriteLine(Math.Min(a, c));
+    Console.WriteLine(Math.Max(a, c));
+}
+if (c < b && c < a)
+{
+    Console.WriteLine(c);
+    Console.WriteLine(Math.Min(a, b));
+    Console.WriteLine(Math.Max(a, b));
+}
