@@ -65,7 +65,7 @@ else if (dey == 7)
     Console.WriteLine("Воскресенье");
 }
 */
-
+/*
 // Задача 5 Введите целые числа от -N до N
 Console.WriteLine("Введите число:");
 int n = Convert.ToInt32(Console.ReadLine());
@@ -79,3 +79,14 @@ while (start <= finich)
     start++;
 
 }
+*/
+//Задача 7 
+// Напишите программу, которая на вход принимает трехзначное число, 
+// а на выход  показывает последнюю цифру этого числа
+
+Console.WriteLine("Введите число:");
+int n = Convert.ToInt32(Console.ReadLine());
+int b;
+b = n % 10;
+Console.WriteLine("Последнее число");
+Console.WriteLine(b);
