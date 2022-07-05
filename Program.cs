@@ -127,9 +127,9 @@ Console.WriteLine (min);
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-int a = 44;
-int b = 5;
-int c = 78;
+int a = 22;
+int b = 3;
+int c = 9;
 
 int max = a;
 
